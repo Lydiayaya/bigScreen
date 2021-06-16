@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/kpiview.css">
+    <title>智慧数据云平台</title>
+
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p >汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p class="activepage">堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间的副标题 -->
+    <div class="subhead">
+        <p>堆场车辆作业状态概览</p>
+    </div>
+    <!-- container用来设置两个div的共同宽度 -->
+    <!-- 左上的标题 -->
+    <div class="title container">
+        <p>当前堆场:</p><span>前沿货场</span>
+
+    </div>
+    <!-- 表格部分 -->
+    <div class="content container">
+        <!-- 左边的表格 -->
+        <div class="Cbox Left">
+            <p class="TableName">装载机闲置排名</p>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        排名
+                    </td>
+                    <td>计划号</td>
+                    <td>装载机编号</td>
+                    <td>闲置时间</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        5 </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        6 </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        7 </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        8 </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        9 </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        13
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        14
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        15
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        16
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        17
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        18
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        19
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+                <tr>
+                    <td>
+                        20
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191#</td>
+                    <td>48分钟</td>
+                </tr>
+            </table>
+
+            <input type="button" value="上一页" class="pre">
+            <input type="button" value="下一页" class="next">
+
+        </div>
+        <!-- 中间的两个小表格 -->
+        <div class="Cbox Center">
+            <div class="CenterTop">
+                <p class="TableName2">倒运车辆排名前五</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            排名
+                        </td>
+                        <td>车辆号</td>
+                        <td>车队</td>
+                        <td>单次耗时</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5 </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+
+                </table>
+
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+            <div class="CenterBottom">
+                <p class="TableName2">倒运车辆排名后五</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            排名
+                        </td>
+                        <td>车辆号</td>
+                        <td>车队</td>
+                        <td>单次耗时</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5 </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+
+                </table>
+
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+
+        </div>
+        <!-- 右边的表格 -->
+        <div class="Cbox Right">
+            <p class="TableName3">装火车回倒清单（按发生时间降序）</p>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        排名
+                    </td>
+                    <td>计划号</td>
+                    <td>回倒车数</td>
+                    <td>回倒吨</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8554</td>
+                </tr>
+                <tr>
+                    <td>
+                        5 </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        6 </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        7 </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        8 </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        9 </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        13
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        14
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        15
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        16
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        17
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        18
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        19
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+                <tr>
+                    <td>
+                        20
+                    </td>
+                    <td>QC20180920-01</td>
+                    <td>191</td>
+                    <td>8664</td>
+                </tr>
+            </table>
+
+            <input type="button" value="上一页" class="pre">
+            <input type="button" value="下一页" class="next">
+        </div>
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

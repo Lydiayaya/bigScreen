@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/notopen0408.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p class="activepage">泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间图表部分 -->
+    <div class="container">
+        <!-- 左边三小的 -->
+        <div class="left">
+            <div class="top5">
+
+                <p class="TableName">全年分泊位吞吐量占比图</p>
+
+            </div>
+            <div class="Atop10">
+                <p class="SubHead2">
+                    <img src="./img/notdo2.png" alt="">
+                    计划
+                </p>
+                <p class="SubHead3"><img src="./img/havedone.png" alt="">实际</p>
+                <p class="TableName2">月度计划完成量趋势图</p>
+
+            </div>
+            <div class="Ftop10">
+                <p class="SubHead2">
+                    <img src="./img/notdo2.png" alt="">
+                    计划
+                </p>
+                <p class="SubHead3"><img src="./img/havedone.png" alt="">实际</p>
+                <p class="TableName2">全年计划完成量趋势图</p>
+
+            </div>
+
+        </div>
+        <!-- 右边的地图 -->
+        <div class="right">
+            <div class="top">
+                <!-- 第一条表格 -->
+                <ul>
+                    <li>
+                        <span>2020</span>年吞吐量(吨)
+                    </li>
+                    <li>11,114,875.70</li>
+                    <li>
+                        <span>2019</span>年吞吐量(吨)
+                    </li>
+                    <li>11,114,875.70</li>
+
+
+                </ul>
+                <!-- 第二条表格 -->
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            (年度同比 1.79%)
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><span>3</span>月吞吐</td>
+                        <td>
+                            <span>3,040,876,.40</span>(环比-1.79%)
+                        </td>
+                        <td>
+                            <span>2</span>月吞吐
+                        </td>
+                        <td>
+                            <span>3,040,876,.40</span>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><span>28</span>日吞吐</td>
+                        <td>
+                            <span>64,55.90</span>(环比 +1.79%)
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <!-- 第三条表格 -->
+            </div>
+            <div class="bottom">
+
+
+
+            </div>
+            <div class="asidetitle" onclick="openalertShow()">
+                <img src="./img/boatopensituation.png" alt="">
+                <p>船舶情况</p>
+            </div>
+
+            <!-- 下面的四个船 -->
+            <div class="bigbox">
+                <div class="box1">
+                    <table class="boxtable">
+                        <tr>
+                            <td>化学家</td>
+                            <td>头1#</td>
+                            <td>尾16#</td>
+                        </tr>
+                    </table>
+                    <div class="progress">
+                        <p class="workprogress">作业进度</p>
+                        <div class="progress-done" data-done="81" style="width:81.0%;"></div>
+                        <p class="percent">81%<img src="./img/workprogress.png" alt=""></p>
+                    </div>
+                    <img src="./img/boatleft.png" alt="" class="imgTop">
+                    <img src="./img/S11berth.png" alt="" class="imgBottom">
+                    <p class="Name">S11泊位</p>
+
+                </div>
+
+                <!-- 这个中间有两个小船，应该另起样式 -->
+                <div class="box1">
+                    <div class="box2">
+                        <div class="boxtable2">
+                            <p>圣玛利亚</p>
+                            <p class="head">头16#</p><span>尾23#</span>
+                        </div>
+                        <img src="./img/smallboatright.png" alt="" class="imgTop2">
+                        <div class="progress">
+                            <p class="workprogress">作业进度</p>
+                            <div class="progress-done" data-done="81" style="width:59.0%;"></div>
+                            <p class="percent">59%<img src="./img/workprogress.png" alt=""></p>
+                        </div>
+
+                    </div>
+                    <div class="box3">
+                        <div class="boxtable3">
+                            <p>东方意大利</p>
+                            <p class="head2">头24#</p><span>尾30#</span>
+                        </div>
+                        <img src="./img/smallboatleft.png" alt="" class="imgTop2">
+                        <div class="progress">
+                            <p class="workprogress">作业进度</p>
+                            <div class="progress-done" data-done="81" style="width:82.0%;"></div>
+                            <p class="percent">82%<img src="./img/workprogress.png" alt=""></p>
+                        </div>
+
+                    </div>
+
+                    <img src="./img/S11berth.png" alt="" class="imgBottom">
+                    <p class="Name">S26泊位</p>
+                </div>
+                <div class="box1">
+
+                    <table class="boxtable">
+                        <tr>
+                            <td>新大洋州</td>
+                            <td>头1#</td>
+                            <td>尾16#</td>
+                        </tr>
+                    </table>
+
+                    <table class="boxtable">
+                        <tr>
+                            <td>新大洋州</td>
+                            <td>头1#</td>
+                            <td>尾16#</td>
+                        </tr>
+                    </table>
+
+                    <div class="progress">
+                        <p class="workprogress">作业进度</p>
+                        <div class="progress-done" data-done="81" style="width:81.0%;"></div>
+                        <p class="percent">81%<img src="./img/workprogress.png" alt=""></p>
+                    </div>
+                    <img src="./img/boatleft.png" alt="" class="imgTop">
+                    <img src="./img/S11berth.png" alt="" class="imgBottom">
+                    <p class="Name">S26泊位</p>
+                </div>
+                <div class="box1">
+                    <table class="boxtable">
+                        <tr>
+                            <td>天鹅领袖</td>
+                            <td>头1#</td>
+                            <td>尾16#</td>
+                        </tr>
+                    </table>
+                    <div class="progress">
+                        <p class="workprogress">作业进度</p>
+                        <div class="progress-done" data-done="81" style="width:81.0%;"></div>
+                        <p class="percent">81%<img src="./img/workprogress.png" alt=""></p>
+                    </div>
+                    <img src="./img/boatleft.png" alt="" class="imgTop">
+                    <img src="./img/S27berth.png" alt="" class="imgBottom">
+                    <p class="Name">S27泊位</p>
+                </div>
+            </div>
+        </div>
+        <!-- 弹出窗口 -->
+        <div class="openalert" onclick="openalertHidden()">
+            <table >
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>中文船名</td>
+                        <td >航次</td>
+                        <td>计划时间</td>
+                        <td>到达/离港</td>
+                        <td>码头</td>
+                        <td>状态</td>
+                        <td>动态分布</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4" class="colhead">沽口
+                        </td>
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                        <td rowspan="4">
+                            <div class="circle">
+                                <p>0</p>
+                                <span>4-8h</span>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table2" >
+                <tbody>
+                    <tr>
+                        <td rowspan="4" class="colhead" style="width:110px">沽口
+                        </td>
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                        <td rowspan="4">
+                            <div class="circle">
+                                <p>2</p>
+                                <span>4-8h</span>
+                            </div>
+
+                        </td>
+                    </tr>
+                   
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table2">
+                <tbody>
+                    <tr>
+                        <td rowspan="4" class="colhead" style="width:110px">沽口
+                        </td>
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                        <td rowspan="4">
+                            <div class="circle">
+                                <p>0</p>
+                                <span>4-8h</span>
+                            </div>
+
+                        </td>
+                    </tr>
+                   
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="Ligao" style=" text-align: right;">已离港</td>
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td>084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="KaoBo">靠泊</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table class="table2">
+                <tbody>
+                    <tr>
+                        <td rowspan="4" class="colhead" style="width:110px">沽口
+                        </td>
+                        <td>新大洋州</td>
+                        <td style="text-align:center">084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="Ligao" style=" text-align: right;">已离港</td>
+
+                        <td rowspan="4">
+                            <div class="circle">
+                                <p>0</p>
+                                <span>4-8h</span>
+                            </div>
+
+                        </td>
+                    </tr>
+                   
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td >8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="Ligao" style=" text-align: right;">已离港</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td >084W/084E</td>
+                        <td >8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="Ligao" style=" text-align: right;">已离港</td>
+
+
+                    </tr>
+                    <tr>
+
+                        <td>新大洋州</td>
+                        <td>084W/084E</td>
+                        <td>8-30 03:30</td>
+                        <td>08-30 03:40</td>
+                        <td>TACT</td>
+                        <td class="Ligao" style=" text-align: right;">已离港</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/flowdiagraph.css">
+    <link rel="stylesheet" href="./css/pre0408.css">
+
+    <title>浮动数据表</title>
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+    
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p class="activepage">火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>汽车疏运</p>
+    
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p">泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间图表部分 -->
+    <div class="container">
+        <!-- 左边四小的 -->
+        <div class="left">
+            <div class="imgchart">
+                <div class="imgchart1">
+                    <p class="TableName">装载机作业情况</p>
+                    <table>
+
+                    </table>
+
+                </div>
+                <div class="imgchart1">
+
+                    <p class="TableName">装载机作业情况</p>
+
+
+                    <table>
+
+                    </table>
+
+                </div>
+                <div class="imgchart1">
+                    <p class="TableName">装载机作业情况</p>
+                    <table>
+
+                    </table>
+
+                </div>
+            </div>
+            <div class="botchart">
+                <span class="more">更多<img src="./img/more.png" alt=""></span>
+                <p class="TableName" style="padding-top: 20px;">火车出库货主排名</p>
+                <table class="progressTable">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>名称</td>
+                            <td>出库量(吨)</td>
+                            <td>占比</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: #F06B00">1</td>
+                            <td style="color: #F06B00">生保</td>
+                            <td style="color: #F06B00">8366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(240,107,0,0.3);">
+                                    <div class="progress-done" data-done="99.2" style="width:86%;background: #F06B00;"></div>
+                                    <span class="percent" style="color: #F06B00">86.0%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #F8B500;">2</td>
+                            <td style="color: #F8B500;">胜利</td>
+                            <td style="color: #F8B500;">7366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(248,181,0,0.3);">
+                                    <div class="progress-done" data-done="99.1" style="width:36.0%;background: #F8B500"></div>
+                                    <span class="percent" style="color: #F8B500;">36.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #00B589 ;">3</td>
+                            <td style="color: #00B589 ;">货场</td>
+                            <td style="color: #00B589 ;">7284.50</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(0,181,137,0.3);">
+                                    <div class="progress-done" data-done="99.2" style="width:23.6%;background-color: #00B589 ;"></div>
+                                    <span class="percent" style="color: #00B589 ;">23.6%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>南场</td>
+                            <td>7245.90</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:19.0%;"></div>
+                                    <span class="percent">19.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>前沿</td>
+                            <td>7170.44</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:12.5%;"></div>
+                                    <span class="percent">12.5%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <!-- 右边的地图 -->
+        <div class="right">
+            <div class="te">
+                <span>前沿货场</span>
+                <p>全年累计疏运量</p>
+            </div>
+            <div>
+                <table class="tab1">
+                    <tr>
+                        <td>列</td>
+                        <td>节</td>
+                        <td>累计(吨)</td>
+                        <tr>
+                            <td>
+                                <div class="numbor numborder ">6</div>
+                                <div class="numbor numborder ">6</div>
+                                <div class="numbor numborder">8</div>
+                            </td>
+                            <td>
+                                <div class="numbor numborder ">6</div>
+                                <div class="numbor numborder">8</div>
+                                <div class="numborpunc numborder">,</div>
+                                <div class="numbor numborder">8</div>
+                                <div class="numbor numborder">8</div>
+                                <div class="numbor numborder">8</div>
+                            </td>
+                            <td>
+                                <div class="numbor numborder">2</div>
+
+                                <div class="numborpunc numborder">,</div>
+                                <div class="numbor numborder">6</div>
+                                <div class="numbor numborder">3</div>
+                                <div class="numbor numborder">4</div>
+                                <div class="numborpunc numborder">,</div>
+                                <div class="numbor numborder">0</div>
+                                <div class="numbor numborder">0</div>
+                                <div class="numbor numborder">0</div>
+                                <div class="numborpunc numborder">.</div>
+                                <div class="numbor numborder">0</div>
+                                <div class="numbor numborder">0</div>
+                            </td>
+                        </tr>
+                    </tr>
+
+                </table>
+                <table class="tab2">
+                    <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>船名</td>
+                            <td>货主</td>
+                            <td>到站信息</td>
+                            <td>计划完成时间</td>
+                            <td>节数</td>
+                            <td>总吨数</td>
+                            <td>实装吨</td>
+                            <td>差值</td>
+                            <td>准装率</td>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>新水电费</td>
+                            <td>彭启</td>
+                            <td>大连水</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>新收到反馈吗</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>水电费</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+
+                        <tr>
+                            <td>07</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>09</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>新打卡</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>新dkfj钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>新鞍钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>新sdlf钢</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>新鞍钢</td>
+                            <td>彭启你</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>沙杰混矿201901</td>
+                            <td>彭启</td>
+                            <td>大连</td>
+                            <td>2020/03/19 14:26:23</td>
+                            <td>55</td>
+                            <td>4000</td>
+                            <td>3990</td>
+                            <td>10</td>
+                            <td>1099.75%</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <input type="button" value="上一页" class="pre">
+            <input type="button" value="下一页" class="next">
+        </div>
+
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

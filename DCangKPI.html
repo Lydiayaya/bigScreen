@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/kpiview.css">
+    <link rel="stylesheet" href="./css/data.css">
+    <link rel="stylesheet" href="./css/situation.css">
+    <title>智慧数据云平台</title>
+
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p >汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p class="activepage">堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- container用来设置两个div的共同宽度 -->
+    <!-- 标题 -->
+    <div class="title container">
+        <table>
+            <tr>
+                <td class="menushow">当前排场</td>
+                <td>实时堆存量</td>
+                <td>本年平均堆存期（天）</td>
+                <td>堆场利用率（%）</td>
+                <td>平均滞留时间（%）</td>
+                <td>当日汽提数</td>
+                <td>回倒数（吨）</td>
+            </tr>
+            <tr>
+                <td class="menu">前沿货场
+                    <img src="./img/down.png" alt="">
+                </td>
+                <td class="num">1,114,875.70</td>
+                <td class="num">22.30</td>
+                <td class="num">100.00</td>
+                <td class="num">74.13</td>
+                <td class="num">1068</td>
+                <td class="num">7,766.34</td>
+            </tr>
+        </table>
+        <div class="asidetitle" onclick="boardtShow()"> 
+            <img src="./img/unfoldsituation.png" alt="">
+            <p>公司数据</p>
+        </div>
+    </div>
+    <!-- 表格部分 -->
+    <div class="content container">
+
+        <!-- 上面的框 -->
+
+        <div class="board" onclick="boardHidden()">
+            <div class="text">
+                <p>全公司</p><span>-堆场数据</span>
+            </div>
+            <table>
+                <tr>
+                    <td>实时堆存量</td>
+                    <td>本年平均堆存期（天）</td>
+                    <td>堆场利用率（%）</td>
+                    <td>平均滞留时间（%）</td>
+                    <td>当日汽提数</td>
+                    <td>回倒数（吨）</td>
+                </tr>
+                <tr>
+                    <td class="num">
+                        <div class="numbor">4</div>
+                        <div class="numborpunc">,</div>
+                        <div class="numbor">5</div>
+                        <div class="numbor">6</div>
+                        <div class="numbor">7</div>
+                        <div class="numborpunc">,</div>
+                        <div class="numbor">8</div>
+                        <div class="numbor">7</div>
+                        <div class="numbor">5</div>
+                        <div class="numborpunc">.</div>
+                        <div class="numbor">7</div>
+                        <div class="numbor">0</div>
+                    </td>
+                    <td class="num">
+                        <div class="numbor">2</div>
+                        <div class="numbor">1</div>
+                        <div class="numborpunc">.</div>
+                        <div class="numbor">7</div>
+                        <div class="numbor">0</div>
+                    </td>
+                    <td class="num">
+                        <div class="numbor">1</div>
+                        <div class="numbor">0</div>
+                        <div class="numbor">0</div>
+
+                        <div class="numborpunc">.</div>
+                        <div class="numbor">0</div>
+                        <div class="numbor">0</div>
+                    </td>
+                    <td class="num">
+                        <div class="numbor">7</div>
+                        <div class="numbor">0</div>
+                        <div class="numborpunc">.</div>
+                        <div class="numbor">0</div>
+                        <div class="numbor">6</div>
+                    </td>
+                    <td class="num">
+                        <div class="numbor">6</div>
+                        <div class="numbor">2</div>
+                        <div class="numbor">0</div>
+                        <div class="numbor">4</div>
+                    </td>
+                    <td class="num">
+                        <div class="numbor">7</div>
+                        <div class="numborpunc">,</div>
+                        <div class="numbor">8</div>
+                        <div class="numbor">7</div>
+                        <div class="numbor">5</div>
+                        <div class="numborpunc">,</div>
+                        <div class="numbor">7</div>
+                        <div class="numbor">0</div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <!-- 左边的表格 -->
+        <div class=" Left">
+            <div class="CenterTop">
+                <p class="TableName2">倒运车辆排名前五</p>
+                <table class="progressTable">
+
+                    <thead>
+                        <tr>
+                            <td>排名</td>
+                            <td>装载机编号</td>
+                            <td>准载率</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: #F06B00">1</td>
+                            <td style="color: #F06B00">109#</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(240,107,0,0.5);">
+                                    <div class="progress-done" data-done="99.2" style="width:97.2%;background: #F06B00;"></div>
+                                    <span class="percent" style="color: #F06B00">99.2%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #F8B500;">2</td>
+                            <td style="color: #F8B500;">110#</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(248,181,0,0.5);">
+                                    <div class="progress-done" data-done="99.1" style="width:97.1%;background: #F8B500"></div>
+                                    <span class="percent" style="color: #F8B500;">99.1%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #00B589 ;">3</td>
+                            <td style="color: #00B589 ;">109#</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(0,181,137,0.5);">
+                                    <div class="progress-done" data-done="99.2" style="width:97.0%;background-color: #00B589 ;"></div>
+                                    <span class="percent" style="color: #00B589 ;">99.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>112#</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:96.5%;"></div>
+                                    <span class="percent">98.9%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>113#</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:95.2%;"></div>
+                                    <span class="percent">98.8%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>114#</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:94.2%;"></div>
+                                    <span class="percent">98.7%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>115#</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:93.2%;"></div>
+                                    <span class="percent">98.6%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>116#</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:92.2%;"></div>
+                                    <span class="percent">98.5%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="CenterBottom">
+            </div>
+        </div>
+        <!-- 中间的表格 -->
+        <div class=" Center">
+            <div class="CenterTop">
+                <div class="TableName2">
+                    <p>装载机作业情况（当日<span>48</span>/180）</p>
+                    <p class="more">更多</p><img src="./img/more.png" alt="">
+                </div>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            作业情况
+                        </td>
+                        <td>派工情况</td>
+                        <td>有效作业</td>
+                        <td>作业(吨)</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="CenterBottom">
+                <p class="TableName2">磅房作业情况（当日）</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            磅房#
+                        </td>
+                        <td>回皮次数</td>
+                        <td>过重次数</td>
+                        <td>月累计衡量(吨)</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <!-- 右边的表格 -->
+        <div class="Right">
+            <div class="CenterTop">
+                <p class="TableName2">倒运车辆排名前五</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            作业类型
+                        </td>
+                        <td class="solo">待入卡口</td>
+                        <td>待回皮</td>
+                        <td>待装车</td>
+                        <td>待出口卡</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            船舶入库
+                        </td>
+                        <td>88</td>
+                        <td>-</td>
+                        <td>60</td>
+                        <td>10</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="CenterBottom">
+                <div class="TableName2">
+                    <p>汽提车辆滞留时间</p>
+                    <p class="more">更多</p><img src="./img/more.png" alt="">
+                </div>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            车牌号
+                        </td>
+                        <td>计划</td>
+                        <td>当前节点</td>
+                        <td>滞留时间</td>
+                        <td>最长滞留时间</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            冀B·23543
+                        </td>
+                        <td>QC20190920-01</td>
+                        <td>回皮</td>
+                        <td>25分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

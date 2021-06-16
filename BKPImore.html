@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/kpiview.css">
+    <link rel="stylesheet" href="./css/kpimore.css">
+    <title>泊位作业KPI状态概览</title>
+
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p class="activepage">泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间的副标题 -->
+    <div class="subhead">
+        <p>泊位作业KPI状态概览</p>
+    </div>
+    <!-- container用来设置两个div的共同宽度 -->
+    <!-- 左上的标题 -->
+    <div class="title container">
+        <p>泊位:</p><span>S27</span><img src="./img/down.png" alt="">
+        <p>飞鸟:</p><span>S27</span><img src="./img/down.png" alt="">
+        <p>计划:
+            <p>CZ20200320-03</p>
+        </p>
+
+    </div>
+    <!-- 表格部分 -->
+    <div class="content container">
+        <!-- 左边的表格 -->
+        <div class="Cbox Left">
+            <p class="TableName">本班门机/卸船机司机情况(本月)</p>
+            <table>
+                <tr>
+                    <td>
+                        司机
+                    </td>
+                    <td>单钩效率</td>
+                    <td>作业量排名</td>
+                    <td>单吨耗电量排名</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        拓雁
+                    </td>
+                    <td>6</td>
+                    <td>22</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>
+                        宣国伟
+                    </td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>15</td>
+                </tr>
+
+            </table>
+
+            <input type="button" value="上一页" class="pre">
+            <input type="button" value="下一页" class="next">
+
+        </div>
+        <!-- 中间小表格 -->
+
+        <div class="Cbox Right">
+            <p class="TableName3">实时装卸记录</p>
+            <table>
+                <tr>
+                    <td>
+                        单位
+                    </td>
+                    <td>门机/卸船机</td>
+                    <td>装/卸</td>
+                    <td>时间</td>
+                    <td>净重(吨)</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        5 </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        6 </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        7 </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        8 </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        9 </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        13
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        14
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        15
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        16
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        17
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        18
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        19
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+                <tr>
+                    <td>
+                        20
+                    </td>
+                    <td>9</td>
+                    <td>卸</td>
+                    <td>09-28 19:20:02</td>
+                    <td>86.64</td>
+                </tr>
+            </table>
+
+            <input type="button" value="上一页" class="pre">
+            <input type="button" value="下一页" class="next">
+        </div>
+        <!-- 右边的表格 -->
+        <div class="Cbox Center">
+            <div class="CenterTop">
+                <p class="TableName2">接卸车辆排名前五</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            排名
+                        </td>
+                        <td>车帮号</td>
+                        <td>车队</td>
+                        <td>单次耗时</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>88-011</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>88-007</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>2-211</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>2-211</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5 </td>
+                        <td>2-212</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+
+                </table>
+
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+            <div class="CenterBottom">
+                <p class="TableName2">接卸车辆排名前五</p>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            排名
+                        </td>
+                        <td>车辆号</td>
+                        <td>车队</td>
+                        <td>单次耗时</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>88-011</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>88-007</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>2-211</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>2-211</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5 </td>
+                        <td>2-212</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                </table>
+
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

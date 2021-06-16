@@ -1,0 +1,164 @@
+        .left .top5:first-child {
+            height: 165px;
+        }
+        
+        .left .top5 {
+            height: 245px;
+            background-image: url(../img/workscoming.png);
+        }
+        
+        .top5 .progressTable {
+            width: 560px;
+            margin-left: 20px;
+        }
+        
+        .top5 .progressTable td {
+            height: 27px;
+        }
+        
+        .progress {
+            width: 224px;
+        }
+        
+        .top5 .progressTable thead tr {
+            background: rgba(0, 0, 0, 0.30);
+            border-radius: 1px 0 0 0;
+        }
+        
+        .TableName {
+            margin-top: 10px;
+        }
+        /* 左边第一个表格 */
+        
+        .left .NoColor {
+            background-image: url(../img/applyfunction.png);
+        }
+        
+        .left .NoColor .progressTable tbody td {
+            padding-top: 12px;
+        }
+        /* 右边的标题样式覆盖 */
+        
+        .right {
+            margin-top: 8px;
+            background: none;
+            border: none;
+            height: 960px;
+            border-radius: 1.15px 0 0 0;
+        }
+        
+        .right .top .DT .timi {
+            font-size: 24px;
+            position: absolute;
+            top: 55px;
+        }
+        
+        .right .top .DT table {
+            position: absolute;
+            top: 50px;
+            left: -20px;
+        }
+        /* 右边的数字 */
+        
+        .left .NoColor .DT {
+            float: left;
+            width: 500px;
+        }
+        
+        .DT .numbor {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 52px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .DT .numborpunc {
+            padding-left: 3px;
+            padding-right: 3px;
+            font-size: 52px;
+            line-height: 80px;
+        }
+        /* 右上图表 */
+        
+        .ChartTable {
+            float: right;
+            width: 500px;
+            height: 200px;
+            background-color: #fff;
+            margin-bottom: 100px;
+        }
+        
+        .DT {
+            margin-left: 0;
+        }
+        /* 黄色数字表格 */
+        
+        .center .Datable span {
+            font-family: Digiface;
+            font-size: 36px;
+            color: #FFFF02;
+            letter-spacing: 3.18px;
+        }
+        
+        .center .Datable .fontSize26 {
+            font-size: 24px;
+        }
+        
+        .container .center .Datable tr:last-child td {
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+        
+        .FuncAlert {
+            width: 600px;
+            height: 945px;
+            background: #0B2254;
+            border: 1px solid #0058B8;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            display: none;
+        }
+        
+        .func {
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+        
+        .func span {
+            font-size: 24px;
+            color: #FFFF02;
+        }
+        
+        .func .FuncTable {
+            width: 560px;
+            border: 1px solid #0058B8;
+            line-height: 31px;
+            text-align: right;
+            margin-top: 10px;
+        }
+        
+        .func .FuncTable thead tr {
+            background: rgba(0, 0, 0, 0.30);
+            border-radius: 1px 0 0 0;
+        }
+        /* 表格具体样式 */
+        
+        .func .FuncTable tr {
+            border-bottom: 1px solid #0058B8;
+        }
+        
+        .FuncTable td:first-child {
+            padding-left: 15px;
+            text-align: left;
+        }
+        
+        .FuncTable td:nth-child(2) {
+            padding-right: 100px;
+        }
+        
+        .FuncTable td:last-child {
+            padding-left: 15px;
+            padding-right: 15px;
+        }

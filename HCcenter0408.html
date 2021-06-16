@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/flowdiagraph.css">
+    <link rel="stylesheet" href="./css/pre0408.css">
+    <link rel="stylesheet" href="./css/center0408.css">
+    <script src="./echarts/echarts.min.js"></script>
+
+    <title>火车输运监控指挥中心-前沿货场0408</title>
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p class="activepage">火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p">泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间图表部分 -->
+    <div class="container">
+        <!-- 左边四小的 -->
+        <div class="left">
+            <div class="imgchart">
+                <div class="imgchart1">
+                    <p class="TableName">装载机作业情况</p>
+                    <div id="main" style="width:560px;height: 210px;margin-left: 10px;">
+
+                    </div>
+
+                </div>
+                <div class="imgchart1">
+
+                    <p class="TableName">装载机作业情况</p>
+
+
+
+                </div>
+                <div class="imgchart1">
+                    <p class="TableName">装载机作业情况</p>
+                    <div id="mian3"> </div>
+
+                </div>
+            </div>
+            <div class="botchart">
+                <span class="more">更多<img src="./img/more.png" alt=""></span>
+                <p class="TableName" style="padding-top: 20px;">火车出库货主排名</p>
+                <table class="progressTable">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>名称</td>
+                            <td>出库量(吨)</td>
+                            <td>占比</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: #F06B00">1</td>
+                            <td style="color: #F06B00">生保</td>
+                            <td style="color: #F06B00">8366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(240,107,0,0.3);">
+                                    <div class="progress-done" data-done="99.2" style="width:86%;background: #F06B00;">
+                                    </div>
+                                    <span class="percent" style="color: #F06B00">86.0%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #F8B500;">2</td>
+                            <td style="color: #F8B500;">胜利</td>
+                            <td style="color: #F8B500;">7366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(248,181,0,0.3);">
+                                    <div class="progress-done" data-done="99.1" style="width:36.0%;background: #F8B500">
+                                    </div>
+                                    <span class="percent" style="color: #F8B500;">36.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #00B589 ;">3</td>
+                            <td style="color: #00B589 ;">货场</td>
+                            <td style="color: #00B589 ;">7284.50</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(0,181,137,0.3);">
+                                    <div class="progress-done" data-done="99.2"
+                                        style="width:23.6%;background-color: #00B589 ;"></div>
+                                    <span class="percent" style="color: #00B589 ;">23.6%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>南场</td>
+                            <td>7245.90</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:19.0%;"></div>
+                                    <span class="percent">19.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>前沿</td>
+                            <td>7170.44</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:12.5%;"></div>
+                                    <span class="percent">12.5%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <!-- 右边的地图 -->
+        <div class="right">
+            <div class="te">
+                <span>2019</span>
+                <p>全年累计疏运量</p>
+            </div>
+            <div>
+                <table class="tab1">
+                    <tr>
+                        <td>列</td>
+                        <td>节</td>
+                        <td>累计(吨)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="numbor numborder ">1</div>
+                            <div class="numbor numborder ">4</div>
+                            <div class="numbor numborder">3</div>
+                            <div class="numbor numborder">2</div>
+                            <div class="numbor numborder">8</div>
+                        </td>
+                        <td>
+                            <div class="numbor numborder ">4</div>
+                            <div class="numbor numborder">9</div>
+
+                            <div class="numbor numborder">0</div>
+                            <div class="numbor numborder">3</div>
+                            <div class="numbor numborder">2</div>
+                            <div class="numbor numborder">9</div>
+                            <div class="numbor numborder">4</div>
+                        </td>
+                        <td>
+                            <div class="numbor numborder">1</div>
+                            <div class="numbor numborder">2</div>
+
+                            <div class="numborpunc numborder">,</div>
+                            <div class="numbor numborder">5</div>
+                            <div class="numbor numborder">6</div>
+                            <div class="numbor numborder">5</div>
+                            <div class="numborpunc numborder">,</div>
+                            <div class="numbor numborder">6</div>
+                            <div class="numbor numborder">9</div>
+                            <div class="numbor numborder">8</div>
+                            <div class="numborpunc numborder">.</div>
+                            <div class="numbor numborder">0</div>
+                            <div class="numbor numborder">9</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="te">
+                <span>9</span>
+                <p>月累计输运量</p>
+                <p style="font-size: 30px;margin-left: 20px;">3452节,439281节/累计6,492.35吨</p>
+            </div>
+            <div class="rtchart">
+                <div class="Lrtchart">
+                    <div class="classifyName">
+                        <span></span>
+                        <p>待装</p>
+                        <span style="background-image: linear-gradient(225deg, #B4EC51 0%, #429321 100%);"></span>
+                        <p>正装</p>
+                        <span style="background-image: linear-gradient(45deg, #A234D5 0%, #D74059 100%);"></span>
+                        <p>装完</p>
+                        <span style="background-image: linear-gradient(45deg, #888C90 0%, #DCDDDE 100%);"></span>
+                        <p>甩车</p>
+                    </div>
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="" style=" margin-top: 10px;">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue train_body_yellow"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue "></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue "></div>
+                            <div class="train_body_blue train_body_purple"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="train">
+                        <p class="train_title">前沿1-2道</p>
+                        <div class="train_body">
+                            <img src="./img/TrainHead.png" alt="">
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue train_body_purple "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_grey"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue"></div>
+                            <div class="train_body_blue train_body_yellow "></div>
+                            <div class="train_body_blue"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="Rrtchart">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>节数</td>
+                                <td>已装</td>
+                                <td>正装</td>
+                                <td>待装</td>
+                                <td>装车时长</td>
+                                <td>差值</td>
+                                <td>准载率</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>120</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>64</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td>12</td>
+                                <td>4</td>
+                                <td>32</td>
+                                <td>28'20''</td>
+                                <td>3028.10</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>58</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+                            <tr>
+                                <td>55</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>58</td>
+                                <td>14'20''</td>
+                                <td>7907.32</td>
+                                <td>98%</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+    <script>
+        var myChart = new echarts.init(document.getElementById('main'));
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            toolbox: {
+                feature: {
+                    dataView: { show: true, readOnly: false },
+                    magicType: { show: true, type: ['line', 'bar'] },
+                    restore: { show: true },
+                    saveAsImage: { show: true }
+                }
+            },
+            legend: {
+                data: ['蒸发量', '降水量', '平均温度']
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '水量',
+                    min: 0,
+                    max: 250,
+                    interval: 50,
+                    axisLabel: {
+                        formatter: '{value} ml'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '温度',
+                    min: 0,
+                    max: 25,
+                    interval: 5,
+                    axisLabel: {
+                        formatter: '{value} °C'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '蒸发量',
+                    type: 'bar',
+                    data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                },
+                {
+                    name: '降水量',
+                    type: 'bar',
+                    data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+                },
+                {
+                    name: '平均温度',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+                }
+            ]
+        };
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+table {
+    width: 415px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #0058B8;
+}
+
+td {
+    line-height: 44px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    padding-left: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    margin-top: 40px;
+}
+
+.pre {
+    margin-left: 120px;
+}
+
+table thead {
+    background: rgba(0, 0, 0, 0.30);
+    border: 1px solid #0058B8;
+    border-radius: 1px 0 0 0;
+}
+
+.table1 {
+    width: 455px;
+    height: 947px;
+    background-image: url(../img/bgimage.png);
+    margin-top: 20px;
+}

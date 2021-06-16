@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/control.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <!--头部  -->
+        <div class="header">
+            <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+            <ul>
+                <!-- 前四个左浮动 -->
+                <li onclick="Jumpcenter()">
+                    <img src="./img/Lmenubg.png" alt="">
+                    <!-- 在li里给绝对定位 -->
+                    <p>指挥中心</p>
+                </li>
+                <li onclick="JumpBowei()">
+                    <img src="./img/Lmenubg.png" alt="">
+                    <p class="activepage">泊位作业</p>
+                </li>
+    
+                <li onclick="JumpTrain()">
+                    <img src="./img/Lmenubg.png" alt="">
+                    <p>火车疏运</p>
+                </li>
+                <li onclick="Jumpcarshuyun()">
+                    <img src="./img/Lmenubg.png" alt="">
+                    <p>汽车疏运</p>
+    
+                </li>
+                <!-- 后四个右浮动 -->
+                <li onclick="JumpDuichang()">
+                    <img src="./img/Rmenubg.png" alt="">
+                    <p>堆场KPI</p>
+                </li>
+                <li onclick="JumpBowei()">
+                    <img src="./img/Rmenubg.png" alt="">
+                    <p >泊位KPI</p>
+                </li>
+                <li onclick="JumpBusiness()">
+                    <img src="./img/Rmenubg.png" alt="">
+                    <p>业务运行</p>
+                </li>
+                <li onclick="JumpGC()">
+                    <img src="./img/Rmenubg.png" alt="">
+                    <p >港存动态</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 中间图表部分 -->
+        <div class="container">
+            <div class="gridcontainer">
+                <div>总配载吨</div>
+                <div>总完成吨</div>
+                <div>总余吨</div>
+                <div>平均船时效率</div>
+                <div>平均单机效率</div>
+                <div>门机</div>
+                <div>装载机</div>
+                <div>挖掘机</div>
+                <div>开工时间</div>
+                <div class="rows1">
+                    <p>
+                        195,005</p> <span>吨</span>
+                </div>
+                <div class="rows2">
+                    <P>
+                        157,393 </P><span>吨</span>
+                </div>
+                <div class="rows3">
+                    <p>
+                        37,612 </p><span>吨</span>
+                </div>
+                <div class="rows4">
+                    <p>
+                        4323 </p><span>吨/时</span>
+                </div>
+                <div class="rows5">
+                    <p>
+                        1654</p> <span>吨/时</span>
+                </div>
+                <div class="rows6">
+                    <p>
+                        9</p>
+                </div>
+                <div class="rows7">
+                    <p> 9</p>
+                </div>
+                <div class="rows8">
+
+                    <p>
+                        -
+                    </p>
+                </div>
+                <div class="rows9">
+                    <p>
+                        2020/03/19 23:37</p>
+                </div>
+            </div>
+            <!-- 进度条 -->
+            <div class="procontainer">
+                <div class="progress">
+                    <p class="workprogress">总完成度</p>
+                    <div class="progress-done" data-done="81" style="width:61.0%;"></div>
+                    <p class="percent">81%<img src="./img/allfinishrate.png" alt=""></p>
+                    <p class="proName">货名：铁矿(乌克兰磁精粉)</p>
+                </div>
+            </div>
+            <!-- charts -->
+            <div class="chartscontainer">
+
+            </div>
+            <!-- 表格 -->
+            <div class="tablecontainer">
+                <table>
+                    <tr>
+                        <td>配载吨</td>
+                        <td>26,200</td>
+                        <td>19,600</td>
+                        <td>19,600</td>
+                        <td>17,000</td>
+                        <td>23,700</td>
+                        <td>22,000</td>
+                        <td>22,600</td>
+                        <td>22,905</td>
+                        <td>18,000</td>
+                        <td>27,000</td>
+                    </tr>
+                    <tr>
+                        <td>完成吨</td>
+                        <td>26,200</td>
+                        <td>19,600</td>
+                        <td>19,600</td>
+                        <td>17,000</td>
+                        <td>23,700</td>
+                        <td>22,000</td>
+                        <td>22,600</td>
+                        <td>22,905</td>
+                        <td>18,000</td>
+                        <td>27,000</td>
+                    </tr>
+                    <tr>
+                        <td>余吨</td>
+                        <td>6,200</td>
+                        <td>9,600</td>
+                        <td>9,600</td>
+                        <td>7,000</td>
+                        <td>3,700</td>
+                        <td>2,000</td>
+                        <td>2,600</td>
+                        <td>2,905</td>
+                        <td>8,000</td>
+                        <td>7,000</td>
+                    </tr>
+                    <tr>
+                        <td>门机</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                        <td>10#</td>
+                    </tr>
+                    <tr>
+                        <td>装载机</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                        <td>前10</td>
+                    </tr>
+                    <tr>
+                        <td>挖掘机</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr >
+                        <td>开机时间</td>
+                        <td>
+                            <P> 2020/03/19</P>
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+                            <p>14:26;23</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>完工时间</td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+
+
+                        <td>
+                            <P> 2020/03/19</P>
+
+                            <p>14:26;23</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

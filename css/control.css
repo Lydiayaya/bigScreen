@@ -1,0 +1,159 @@
+.box {
+  background-image: url(../img/bg.png);
+  width: 1920px;
+  height: 1080px;
+}
+/* 网格布局 */
+.gridcontainer {
+  margin-left: 140px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 191px 190px 190px 157px 157px 71px 70px 70px 318px;
+  grid-template-rows: 50px 50px;
+  color: #fff;
+  grid-column-gap: 20px;
+}
+.gridcontainer p {
+  display: inline;
+  font-family: HYk1gj;
+  font-size: 36px;
+  color: #02eeee;
+  letter-spacing: 0;
+}
+/* 每个数字表格有背景图 */
+.rows1 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows2 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows3 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows4 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows5 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows6 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows7 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows8 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+.rows9 {
+  background-image: url(../img/numberbg.png);
+  text-align: center;
+}
+/* 进度条 */
+.procontainer {
+  position: relative;
+  margin-top: 66px;
+  margin-left: 491px;
+}
+.progress {
+  z-index: 11;
+  width: 989px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.progress-done {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  height: 16px;
+  background: #0ad0ff;
+  border-radius: 8.22px;
+  border-radius: 8.22px;
+}
+.progress p {
+  color: #ffffff;
+  font-size: 14px;
+}
+.progress .workprogress {
+  position: absolute;
+  left: -100px;
+  top: -3px;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+.progress .percent {
+  position: absolute;
+  top: -30px;
+  right: 390px;
+  font-size: 20px;
+  color: #02eeee;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.progress .proName {
+  position: absolute;
+  top: 50px;
+
+  left: 260px;
+  font-family: PingFangSC-Medium;
+  font-size: 26px;
+  color: #73b6ff;
+  text-align: center;
+  line-height: 26px;
+}
+
+.progress .percent img {
+  margin-left: 5px;
+}
+/*图表 */
+.chartscontainer{
+    width:1200px;
+    height: 300px;
+    background-color: #fff;
+    margin-left: 321px;
+    margin-top: 100px;
+}
+/* 表格 */
+.tablecontainer{
+  width: 1317px; 
+  height: 300px;
+
+  margin-left: 267px;
+  margin-top: 25px;
+}
+.tablecontainer table{
+  width: 1317px; 
+
+}
+.tablecontainer table td{
+height: 35px;
+font-family: PingFangSC-Regular;
+font-size: 18px;
+color: #59B2F7;
+letter-spacing: 0;
+text-align: right;
+padding-right:12px;
+border: 1px solid #0058B8;
+opacity: 0.6;
+
+}
+.tablecontainer table td:first-child{
+background: rgba(0,0,0,0.30);
+border: 1px solid #0058B8;
+border-radius: 1px 0 0 0;
+}
+.tablecontainer table tr:last-child(){
+    line-height: 20px;
+}
+
+ 

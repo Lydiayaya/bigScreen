@@ -1,0 +1,165 @@
+/* 
+第一张页面
+*/
+
+
+/* 表格部分 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Cbox {
+    width: 613px;
+    height: 837px;
+}
+
+
+/* 名称 */
+
+
+/* 魔幻布局第一步 */
+
+.TableName2 {
+    padding-top: 20px;
+}
+
+.TableName3 {
+    width: 384px;
+}
+
+.Left .CenterTop {
+    background-image: url(../img/rank_p5.png);
+}
+
+table {
+    width: 573px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #59B2F7;
+    border: 1px solid #0058B8;
+}
+
+table tr:nth-child(2n) {
+    background: rgba(255, 255, 255, 0.00);
+}
+
+table tr:nth-child(2n+1) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+table tr:first-child {
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 1px 0 0 0;
+    height: 34px;
+    border: none;
+}
+
+table td:first-child {
+    text-align: left;
+    padding-left: 15px;
+}
+
+table td:last-child {
+    padding-right: 15px;
+}
+
+table td {
+    height: 34px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #9eb1c0;
+    letter-spacing: 0;
+    border-bottom: 1px solid #0058B8;
+    text-align: right;
+}
+
+.Center .CenterTop {
+    width: 613px;
+    height: 408px;
+    /* 魔幻第二步 */
+    /* 我也不知道为啥，不加这个表格顶部不在一条水平线上 */
+    margin-top: -20px;
+    background-image: url(../img/rank_p5.png);
+    margin-bottom: 21px;
+}
+
+.Center .CenterBottom {
+    width: 613px;
+    height: 408px;
+    background-image: url(../img/rank_l5.png);
+}
+
+.Right,
+.Right2 {
+    background-image: url(../img/train_list.png);
+}
+
+.Right table td:nth-child(2) {
+    text-align: left;
+}
+
+.littleTable td {
+    height: 50px;
+}
+
+.littleTable td:nth-child(2) {
+    text-align: right;
+}
+
+.Left .CenterTop .progressTable {
+    border: none;
+}
+
+.Left {
+    background-image: url(../img/train_list.png);
+}
+.Left .CenterTop .progressTable td {
+    border: none;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: left;
+    height: 34px;
+    padding-right: 30px;
+}
+
+.Left .CenterTop .progressTable tbody td {
+    background-color: #052669;
+    border: none;
+}
+
+.progress {
+    background-color: transparent;
+    border-radius: 11px;
+    position: relative;
+    margin: 0 10px;
+    height: 22px;
+    width: 302px;
+    position: relative;
+    margin-left: 0px;
+    border: 1px solid rgba(88, 177, 246, 0.5);
+}
+
+.progress-done {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    border-radius: 5px;
+    height: 12px;
+    width: 0;
+    transition: width 1s ease 0.3s;
+    background-color: rgba(88, 177, 246, 1);
+}
+
+.percent {
+    position: absolute;
+    font-size: 18px;
+    top: -2px;
+    right: -58px;
+}
+
+
+/* KPI状态概览的图片 */

@@ -1,0 +1,111 @@
+.right .tab1 {
+  margin-left: 66px;
+}
+
+.right .te {
+  margin-left: 46px;
+}
+
+.right {
+  background-color: #131944;
+  border: none;
+}
+
+.rtchart {
+  position: relative;
+  width: 1250px;
+  height: 706px;
+}
+
+.right .rtchart .Lrtchart {
+  position: absolute;
+  width: 700px;
+  height: 100%;
+}
+
+.right .rtchart .Rrtchart {
+  position: absolute;
+  right: 40px;
+  width: 497px;
+}
+
+.right .rtchart .Rrtchart table {
+  width: 497px;
+}
+
+.right .rtchart .Rrtchart thead td {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1px 0 0 0;
+  line-height: 34px;
+}
+
+.right .rtchart .Rrtchart td:first-child {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.right .rtchart .Rrtchart tbody td {
+  line-height: 86px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.right .rtchart .Lrtchart .classifyName {
+  margin-top: 27px;
+  margin-left: 260px;
+}
+.right .rtchart .Lrtchart .classifyName > span {
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  float: left;
+  margin: 5px;
+  background-image: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+/* 为什么这里的选择有的起不了作用 */
+/* .right .rtchart .Lrtchart .classifyName > span:nth-child(4) {
+  background-image: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+.right .rtchart .Lrtchart .classifyName > span:nth-child(3) {
+    background-image: linear-gradient(45deg, #a234d5 0%, #d74059 100%);
+}
+.right .rtchart .Lrtchart .classifyName > span:nth-child(2) {
+  background-image: linear-gradient(45deg, #a234d5 0%, #d74059 100%);
+} */
+
+.right .rtchart .Lrtchart .classifyName > p {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+}
+.right .rtchart .Lrtchart .train {
+  float: left;
+  padding-bottom: 2px;
+  border-bottom: 2px #003c82 solid;
+}
+.right .rtchart .Lrtchart .train > p {
+  float: none;
+  margin-top: 21px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.right .rtchart .Lrtchart .train .train_body img {
+  float: left;
+}
+
+.train_body_blue {
+  float: left;
+  margin: 1px;
+  width: 13px;
+  height: 10px;
+  background-image: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.train_body_purple {
+    background-image: linear-gradient(45deg, #A234D5 0%, #D74059 100%);
+}
+.train_body_yellow {
+    background-image: linear-gradient(225deg, #B4EC51 0%, #429321 100%);
+}
+.train_body_grey{
+    background-image: linear-gradient(45deg, #888C90 0%, #DCDDDE 100%);
+}

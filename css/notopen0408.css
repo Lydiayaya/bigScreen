@@ -1,0 +1,380 @@
+.container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.left {
+  width: 600px;
+  float: left;
+}
+.TableName2 {
+  padding-top: 20px;
+}
+p > img {
+  vertical-align: middle;
+  margin-right: 5.2px;
+}
+.SubHead2 {
+  position: absolute;
+  top: 20px;
+  right: 27px;
+  font-size: 18px;
+  color: #59b2f7;
+}
+
+.SubHead3 {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  font-size: 18px;
+  color: #59b2f7;
+}
+/* 左边表格*/
+
+.left .top5 {
+  position: relative;
+  height: 248px;
+  background-image: url(../img/allyearpercent.png);
+}
+
+.top5 .TableName {
+  padding-top: 20px;
+}
+
+.left .Atop10 {
+  margin-top: 20px;
+  height: 320px;
+  background-image: url(../img/monthplantofinish.png);
+  position: relative;
+}
+
+.left .Ftop10 {
+  margin-top: 40px;
+  height: 320px;
+  background-image: url(../img/yearplantofinish.png);
+  position: relative;
+}
+/* 右边的表格 */
+.right {
+  height: 950px;
+  width: 1230px;
+  float: right;
+  position: relative;
+}
+.right .top span {
+  font-size: 26px;
+  color: yellow;
+}
+.right .top ul li {
+  margin-top: 40px;
+  font-size: 26px;
+  color: #73b6ff;
+  letter-spacing: 0;
+  line-height: 50px;
+}
+.right .top ul li:nth-child(even) {
+  font-family: PingFangSC-Medium;
+  font-size: 50px;
+  color: #00f4ff;
+  letter-spacing: 0;
+  line-height: 50px;
+  margin-left: -55px;
+}
+.right .top ul li:first-child {
+  margin-left: 30px;
+}
+.right .top ul li:nth-child(4) {
+  margin-right: -55px;
+}
+/* 表格 */
+.top table {
+  width: 1220px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+}
+.top table td {
+  line-height: 36px;
+  font-size: 26px;
+  color: #73b6ff;
+  text-align: right;
+}
+table td:first-child {
+  width: 110px;
+  text-align: left;
+}
+table td:nth-child(2) {
+  width: 450px;
+}
+.right .top table td:nth-child(even) span {
+  font-size: 36px;
+  color: #73b6ff;
+  line-height: 36px;
+  margin-right: 10px;
+}
+table td:nth-child(3) {
+  width: 160px;
+}
+/* 侧边按钮 */
+
+.asidetitle {
+  position: absolute;
+  top: 195px;
+  right: -30px;
+  width: 190px;
+  height: 50px;
+  background: #0c2254;
+  /* 这里也很重要 */
+  border: 4px solid transparent;
+  border-right: none;
+  /* 设置边框渐变______不会，网上找的 */
+  border-radius: 51px 0 0 51px;
+  border-radius: 51px 0px 0px 51px;
+  background-image: linear-gradient(#091444, #091444),
+    linear-gradient(to right, rgba(36, 97, 208, 1), rgba(36, 97, 209, 0.39));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.asidetitle img {
+  width: 24px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+.asidetitle p {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  color: #00ebf8;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 54px;
+}
+.bigbox {
+  margin-top: 50px;
+}
+.box1 {
+  float: left;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  width: 610px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+.bigbox .box1 .boxtable {
+  font-size: 20px;
+  text-align: center;
+  color: #59b2f7;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+}
+.bigbox .box1 .boxtable td {
+  padding-left: 0;
+  width: 82px;
+}
+.imgTop {
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+
+  box-shadow: 0px 10px 10px rgba(17, 15, 15, 0.5),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.imgBottom {
+  margin-top: 85px;
+  z-index: -1;
+}
+.Name {
+  position: absolute;
+  bottom: 45px;
+  left: 260px;
+  font-size: 20px;
+  color: #001e41;
+}
+/* 船上的进度条  适用于三个图表*/
+.progress {
+  position: absolute;
+  top: 137px;
+  left: 156px;
+  z-index: 11;
+  width: 350px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.progress-done {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 10px;
+  background: #0ad0ff;
+  border-radius: 8.22px;
+  border-radius: 8.22px;
+}
+.progress p {
+  color: #ffffff;
+  font-size: 14px;
+}
+.progress .workprogress {
+  position: absolute;
+  left: -75px;
+  top: -3px;
+}
+.progress .percent {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+
+.progress .percent img {
+  margin-left: 5px;
+}
+/* 船上的进度条  适用于两个小船的*/
+
+.bigbox .box1 .box2,
+.box3 {
+  font-size: 20px;
+  text-align: center;
+  color: #59b2f7;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.bigbox .box1 .box2 .imgTop2 {
+  position: absolute;
+  bottom: 126px;
+  left: 36px;
+  box-shadow: 0px 10px 10px rgba(17, 15, 15, 0.5),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.bigbox .box1 .box3 .imgTop2 {
+  position: absolute;
+  bottom: 126px;
+  right: 20px;
+  box-shadow: 0px 10px 10px rgba(17, 15, 15, 0.5),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/* 表格 */
+.bigbox .box1 .head {
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.bigbox .box1 .head2 {
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.bigbox .box1 .boxtable2 {
+  width: 300px;
+  position: absolute;
+  left: 0px;
+}
+
+.bigbox .box1 .boxtable3 {
+  position: absolute;
+  left: 370px;
+}
+/* 进度条 */
+.bigbox .box1 .box2 .progress {
+  width: 180px;
+  position: absolute;
+  left: 134px;
+  top: 148px;
+}
+.bigbox .box1 .box3 .progress {
+  width: 136px;
+  position: absolute;
+  left: 426px;
+  top: 148px;
+}
+
+/* open0408的弹出表格设计 */
+.openalert {
+  width: 1154px;
+  height: 698px;
+  position: absolute;
+  top: 275px;
+  right: 0;
+  background: #0c2254;
+  border: 1px solid #0058b8;
+  border-radius: 1.15px 0 0 0;
+  z-index: 99;
+  border-bottom: none;
+  display: none;
+}
+.openalert table {
+  width: 1154px;
+  border-bottom: 1px solid #0058b8;
+}
+.openalert .table2 {
+  margin-top: 10px;
+}
+
+.openalert table thead {
+  background: #0d699b;
+  border-radius: 1.15px 0 0 0;
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+}
+.openalert table thead :nth-child(7){
+  text-align: right;
+
+}
+.openalert table tbody td {
+  font-size: 20px;
+  color: #59b2f7;
+  letter-spacing: 0;
+  line-height: 31px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+/* 去掉之前的样式——去掉一些错误样式并增添一些样式 */
+.openalert table td:nth-child(2) {
+  width: 0px;
+}
+
+.openalert table td:first-child {
+  padding: 0;
+}
+/*  */
+.openalert .KaoBo {
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+  color: #7ED321;
+}
+.openalert .Ligao {
+  margin: 0;
+  padding: 0;
+  padding-left: 110px;
+  text-align: right;
+}
+.openalert table td:last-child {
+  text-align: center;
+}
+.circle {
+  width: 108px;
+  height: 108px;
+  border: 7px solid #00ecfc;
+  border-radius: 50%;
+  margin-left: 110px;
+}
+.circle p {
+  margin-top: 25px;
+}
+.openalert .colhead {
+  width: 20px;
+  margin: 0 auto;
+  line-height: 24px;
+}

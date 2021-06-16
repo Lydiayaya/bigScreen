@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Digiface";
+    src: url('../font/digifac.TTF');
+}
+
+.sideLeft {
+    float: left;
+    width: 560px;
+    height: 800px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.sideLeft li {
+    margin-bottom: 54px;
+}
+
+.sideLeft img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 36px;
+    float: left;
+}
+
+.sideLeft p {
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.sideLeft .numb {
+    font-family: PingFangSC-Medium;
+    font-size: 40px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.sideLeft table {
+    width: 560px;
+    height: 130px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: 34px;
+    background: rgba(0, 122, 255, 0.07);
+}
+
+.sideLeft table td:first-child {
+    padding-left: 30px;
+}
+
+.sideRight {
+    width: 1277px;
+    height: 930px;
+    margin-left: 640px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.sideLeft .textp {
+    width: 362px;
+    height: 42px;
+    margin-top: 61px;
+}
+
+.sideRight .top span {
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #F8E71C;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 130px;
+    margin-left: 475px;
+}
+
+.top .hexagonal {
+    position: absolute;
+    right: 409px;
+    top: 10px;
+}
+
+.sideRight p {
+    display: inline;
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #3C76B8;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+}
+
+
+/* 大数字的样式 */
+
+.num {
+    font-family: Digiface;
+    font-size: 96px;
+    color: #00F4FF;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 10px;
+}
+
+.num .numbor {
+    margin-right: 10px;
+}
+
+.numborder {
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-right: 10px;
+}
+
+.numborpunc {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top .allyear {
+    position: absolute;
+    top: 268px;
+    left: 550px;
+    font-size: 26px;
+}
+
+.sideRight .center .centerdata {
+    position: absolute;
+    top: 367px;
+    left: 70px;
+}
+
+.sideRight .center .centerdata td:nth-child(3) {
+    padding-left: 221px;
+}
+
+.sideRight .center .centerdata p {
+    font-family: PingFang-SC-Medium;
+    font-size: 26px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 37px;
+    opacity: 0.7;
+}
+
+.sideRight .center .centerdata .data {
+    font-family: PingFangSC-Medium;
+    font-size: 40px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.sideRight .center .centerdata span {
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #F8E71C;
+    letter-spacing: 0;
+}
+
+.sideRight .center .centerdata td {
+    height: 70px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+.matouhuochang {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    transform: rotate(-8deg);
+    width: 216px;
+    height: 80px;
+    background: #264CC3;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 24px;
+    line-height: 80px;
+}
+
+.south {
+    position: absolute;
+    top: 160px;
+    left: 60px;
+    width: 300px;
+    height: 80px;
+    background: #264CC3;
+    transform: rotate(-9deg);
+    line-height: 80px;
+}
+
+.line1050 {
+    transform: rotate( -6deg);
+    width: 375px;
+    height: 39px;
+    background: #264CC3;
+    position: absolute;
+    left: 509px;
+    bottom: 35px;
+    line-height: 39px;
+}
+
+.kuangshi {
+    width: 85px;
+    height: 140px;
+    background: #264CC3;
+    position: absolute;
+    top: 69px;
+    left: 836px;
+    transform: rotate( -10deg);
+}
+
+.kuaangshitext {
+    transform: rotate( -10deg);
+    width: 150px;
+    position: absolute;
+    top: 120px;
+    left: 800px;
+}
+
+.H26 {
+    transform: rotate( -8deg);
+    width: 242px;
+    height: 73px;
+    background: #264CC3;
+    position: absolute;
+    top: 73px;
+    right: 82px;
+    line-height: 73px;
+}
+
+.H27 {
+    transform: rotate( -8deg);
+    width: 242px;
+    height: 73px;
+    background: #264CC3;
+    position: absolute;
+    top: 173px;
+    right: 62px;
+    line-height: 73px;
+}
+
+.text1 {
+    position: absolute;
+    top: 3px;
+    left: -6px;
+    transform: rotate( -9deg)
+}
+
+.text2 {
+    position: absolute;
+    top: -26px;
+    left: 209px;
+    transform: rotate( -7deg);
+}
+
+.text3 {
+    position: absolute;
+    top: 20px;
+    right: 308px;
+    transform: rotate( -6deg);
+}
+
+.text4 {
+    position: absolute;
+    top: 12px;
+    right: 125px;
+    transform: rotate( -6deg);
+}
+
+.line {
+    display: inline;
+    /* border-right: 1px dotted blue;
+    border-top: 1px dotted blue;
+    margin-left: 100px; */
+    opacity: 0.8;
+    border: 1px dotted #59B2F7;
+}
+
+.bottom .ele .txt {
+    transform: rotate(-6deg);
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 24px;
+    opacity: 0.8
+}
+
+.bottom .ele .Ta1 {
+    width: 370px;
+    height: 207px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: -49px;
+    left: 37px;
+    z-index: 100;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    line-height: 48px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.bottom .ele .Ta2 {
+    width: 366px;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: 8px 8px 8px 0 0 0 8px;
+    border-radius: 8px 8px 8px 0px 0px 0px 8px;
+    position: absolute;
+    top: -170px;
+    right: 154px;
+    z-index: 100;
+    line-height: 46px;
+    border-radius: 10px;
+}
+
+.bottom .ele .Ta2 td {
+    padding-top: 10px;
+    text-align: right;
+}
+
+.bottom .ele .Ta2 td:first-child {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.bottom .ele .Ta2 td:last-child {
+    font-size: 28px;
+}

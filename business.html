@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/kpiview.css">
+    <link rel="stylesheet" href="./css/data.css">
+    <link rel="stylesheet" href="./css/situation.css">
+    <link rel="stylesheet" href="./css/dockbusinessoperation.css">
+    <title>智慧数据云平台</title>
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p class="activepage">业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p >港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- container用来设置两个div的共同宽度 -->
+    <!-- 标题 -->
+    <!-- 表格部分 -->
+    <div class="content container">
+        <!-- 左边的表格 -->
+        <div class="Left">
+            <div class="CenterTop">
+                <div class="TableName2">
+                    <p>汽提运费</p>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="littleTable">
+                    <tr>
+                        <td>
+                            序号
+                        </td>
+
+                        <td>区域流向</td>
+                        <td>运费(元/吨)</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            01
+                        </td>
+                        <td>内蒙古地区——建龙万鹏</td>
+
+                        <td>70.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            02
+                        </td>
+                        <td>河北地区——邯郸钢铁</td>
+                        <td>100.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            03
+                        </td>
+                        <td>内蒙古地区—包邮钢铁</td>
+                        <td>120.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            04
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>10.00</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            05
+                        </td>
+                        <td>河北地区-普阳</td>
+                        <td>150.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            06
+                        </td>
+                        <td>安徽地区-马鞍山</td>
+                        <td>15.00</td>
+
+                    </tr>
+                </table>
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+            <div class="CenterBottom">
+                <div class="TableName2">
+                    <p>本年度累计预计营收(元)</p>
+                </div>
+                <div class="num">
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">.</div>
+                    <div class="numbor numborder">9</div>
+                    <div class="numbor numborder">9</div>
+                </div>
+                <div class="TableName2">
+                    <p>本年度累计预计营收(元)</p>
+                </div>
+                <div class="num">
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">.</div>
+                    <div class="numbor numborder">9</div>
+                    <div class="numbor numborder">9</div>
+                </div>
+                <div class="TableName2">
+                    <p>本年度累计预计营收(元)</p>
+                </div>
+                <div class="num">
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder ">6</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">,</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numbor numborder">8</div>
+                    <div class="numborpunc numborder">.</div>
+                    <div class="numbor numborder">9</div>
+                    <div class="numbor numborder">9</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 中间的表格 -->
+        <div class="Center">
+            <div class="CenterTop2">
+                <div class="TableName2">
+                    <p>各流向区域汽运情况-上日情况</p>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            序号
+                        </td>
+                        <td>货物小类</td>
+                        <td>区域流向</td>
+                        <td>上日(吨)</td>
+                        <td>本日(吨)</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            02
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            03
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            01
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            04
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            05
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            06
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                </table>
+
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next"> </div>
+            <div class="CenterBottom2">
+                <p class="TableName2">磅房作业情况（当日）</p>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            磅房#
+                        </td>
+                        <td>回皮次数</td>
+                        <td>过重次数</td>
+                        <td>月累计衡量(吨)</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>翼B·23543</td>
+                        <td>远航</td>
+                        <td>48分钟</td>
+                    </tr>
+
+                </table>
+                <input type="button" value="上一页" class="pre">
+                <input type="button" value="下一页" class="next">
+            </div>
+
+        </div>
+        <!-- 右边的表格 -->
+        <div class="Right">
+            <div class="CenterTop2">
+                <p class="TableName2">倒运车辆排名前五</p>
+            </div>
+            <div class="CenterBottom2">
+                <div class="TableName2">
+                    <p>汽提车辆滞留时间</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/mousealert.js"></script>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>

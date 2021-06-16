@@ -1,0 +1,111 @@
+.FuncAlert2 {
+  width: 1220px;
+  height: 945px;
+  background: #0b2254;
+  border: 1px solid #0058b8;
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  display: none;
+}
+
+.FuncAlert2 .func {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.FuncAlert2 .func span {
+  font-size: 36px;
+  color: #ffff02;
+}
+
+/* 标题新添样式 */
+
+.FuncAlert2 .Sub {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.FuncAlert2 .func p {
+  font-family: PingFangSC-Medium;
+  font-size: 26px;
+  color: #59b2f7;
+}
+
+.FuncAlert2 .pro {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.FuncAlert2 .func .pro .pro-done {
+  font-size: 24px;
+  color: #2cadd4;
+  position: absolute;
+  top: -20px;
+  left: 394px;
+}
+
+.FuncAlert2 .func .progress {
+  width: 989px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  border: none;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 14.5px;
+  border-radius: 14.5px;
+}
+
+.FuncAlert2 .func .progress .progress-done {
+  border-radius: 14.5px;
+  border-radius: 14.5px;
+  height: 16px;
+  margin-top: 2.5px;
+  margin-left: 2.5px;
+}
+
+/* 表格具体样式 */
+
+.FuncAlert2 .func .FuncTable {
+  width: 1140px;
+  border: 1px solid #0058b8;
+  line-height: 31px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.FuncAlert2 .func .FuncTable thead tr {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1px 0 0 0;
+}
+
+.FuncAlert2 .func .FuncTable tr {
+  border-bottom: 1px solid #0058b8;
+  line-height: 40px;
+}
+
+.FuncAlert2 .FuncTable td:first-child {
+  padding-left: 15px;
+}
+
+.FuncAlert2 .FuncTable td:nth-child(n + 4) {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.FuncAlert2 .FuncTable td:nth-child(2) {
+  padding-left: 30px;
+}
+
+.FuncAlert2 .FuncTable td:nth-child(3) {
+  padding-right: 50px;
+}
+
+.FuncAlert2 .FuncTable td:nth-child(5) {
+  padding-right: 60px;
+}

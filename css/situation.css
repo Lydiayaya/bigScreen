@@ -1,0 +1,88 @@
+ /* 第二张页面 */
+ /* 左上标题 */
+ /* 表格标题 */
+ 
+ .content {
+     margin-top: -20px;
+ }
+ 
+ .CenterTop .TableName2 {
+     margin-bottom: 20px;
+ }
+ 
+ .CenterBottom .TableName2 {
+     margin-bottom: 20px;
+ }
+ /* 表格 */
+ 
+ .container td {
+     height: 44px;
+ }
+ /* 去除两个小框后面大背景图 */
+ 
+ .Left,
+ .Right {
+     background-image: none;
+ }
+ /* 左边 */
+ 
+ .Left .CenterTop {
+     width: 610px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     background-size: 100% 100%;
+ }
+ 
+ .Left .CenterBottom input {
+     margin-top: 50px;
+ }
+ 
+ .Left .CenterBottom {
+     width: 610px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     background-size: 100% 100%;
+ }
+ /* 中 */
+ 
+ .Center {
+     margin-top: 20px;
+ }
+ 
+ .Center .CenterTop {
+     width: 620px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     background-size: 100% 100%;
+ }
+ 
+ .Center .CenterBottom input {
+     margin-top: 95px;
+ }
+ 
+ .Center .CenterBottom {
+     width: 620px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     background-size: 100% 100%;
+ }
+ /* 右 */
+ 
+ .Right .CenterTop {
+     width: 610px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     background-size: 100% 100%;
+ }
+ 
+ .Right .CenterBottom {
+     width: 610px;
+     height: 398px;
+     background-image: url(../img/rank_p5.png);
+     /* 让背景图片填充满 */
+     background-size: 100% 100%;
+ }
+ 
+ .Right .CenterBottom input {
+     margin-top: 185px;
+ }

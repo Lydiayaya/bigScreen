@@ -1,0 +1,225 @@
+.numTab {
+    float: right;
+    margin-right: 50px;
+    font-family: "Digiface";
+    
+}
+
+.numTab .tab1 {
+    width: 1320px;
+    font-size: 24px;
+}
+
+.numborpunc {
+    width: 10px;
+}
+
+.TableName2 {
+    margin-left: 20px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.title {
+    float: left;
+}
+
+.BoTab {
+    float: left;
+    width: 100%;
+    height: 916px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BoTab .lchartone {
+    width: 610px;
+    height: 398px;
+    background-image: url(../img/hwpro.png);
+    position: relative;
+}
+
+.BoTab .lchartone .play {
+    display: inline-block;
+    width: 76px;
+    height: 24px;
+    background: rgba(0, 244, 255, 0.00);
+    border: 1px solid rgba(0, 244, 255, 0.70);
+    border-radius: 12px;
+    border-radius: 12px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #00F4FF;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.BoTab .lcharttwo {
+    margin-top: 20px;
+    width: 610px;
+    height: 398px;
+    background-image: url(../img/hwxl.png);
+}
+
+.BoTab .lchartone .play img {
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.BoTab .Cchartone {
+    width: 620px;
+    height: 398px;
+    background-image: url(../img/thishwdetails.png);
+}
+
+.BoTab .Ccharttwo {
+    margin-top: 20px;
+    width: 620px;
+    height: 398px;
+    background-image: url(../img/thishwdetails.png);
+}
+
+.BoTab .Ccharttwo table {
+    width: 580px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.BoTab .Rchartone {
+    width: 620px;
+    height: 213px;
+    background-image: url(../img/ulrecord.png);
+}
+
+.BoTab .Rchartone table {
+    width: 580px;
+    margin-left: 15px;
+}
+
+.BoTab .Rchartone table {
+    width: 580px;
+    margin-left: 15px;
+}
+
+.BoTab .Rcharttwo {
+    margin-top: 18px;
+    width: 620px;
+    height: 288px;
+    background-image: url(../img/ultop5.png);
+}
+
+.BoTab .Rchartthree {
+    margin-top: 14px;
+    width: 620px;
+    height: 284px;
+    background-image: url(../img/ulbot5.png);
+}
+
+.bor {
+    height: 99px;
+    background: rgba(20, 50, 140, 0.20);
+    border: 2px solid #133FAC;
+    width: 570px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #BAE1FF;
+    line-height: 45px;
+}
+
+.bor p {
+    color: #59B2F7;
+}
+
+.bor h2 {
+    font-family: PingFangSC-Medium;
+    font-weight: 540;
+    font-size: 32px;
+}
+
+.bor span {
+    font-size: 14px;
+}
+
+.bigbor2 {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigbor2 .bigborch {
+    width: 276px;
+    height: 99px;
+    border: 2px solid #133FAC;
+}
+
+
+/* 弹窗 */
+
+.container {
+    position: relative;
+}
+
+.Kpialert {
+    position: absolute;
+    width: 1253px;
+    height: 955px;
+    background-color: red;
+    right: 0;
+    top: 15px;
+    background: #0C2254;
+    border: 1px solid #0058B8;
+    z-index: 111;
+    display: none;
+}
+/* 弹窗里面的图片 */
+.Kpialert img{
+    vertical-align: middle;
+    margin-right: 5.2px;
+    margin-left: 8px;
+   
+}
+/* 弹窗里面的标题 */
+.AlertTitle {
+    position: relative;
+    color: #59B2F7;
+}
+.AlertTitle>p {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.AlertTitle span {
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: yellow;
+    line-height: 36px;
+}
+.AlertTitle >img{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+
+.AlertOption {
+    float: right;
+    width: 500px;
+    margin-right: 179px;
+    font-size: 18px;
+    color: #59B2F7;
+    line-height: 25px;
+    margin-top: 60px;
+}
+
+.AlertOption ul {
+    height: 25px;
+    line-height: 25px;
+    margin-right: 0;
+}
+

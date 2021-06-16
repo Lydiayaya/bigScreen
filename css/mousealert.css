@@ -1,0 +1,180 @@
+.top span {
+  font-family: PingFang-SC-Medium;
+  font-size: 30px;
+  color: #f8e71c;
+  letter-spacing: 0;
+  line-height: 100px;
+}
+
+.top p {
+  display: inline;
+  font-family: PingFang-SC-Medium;
+  font-size: 30px;
+  color: #3c76b8;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+}
+
+h4 {
+  font-family: PingFangSC-Medium;
+  font-size: 40px;
+  color: #00f4ff;
+  letter-spacing: 0;
+  line-height: 50px;
+  display: inline;
+  font-weight: 400;
+}
+
+/* 右边的数据表格 */
+
+.Datable {
+  margin-top: -25px;
+}
+
+.Datable table {
+  width: 339px;
+  height: 170px;
+}
+
+.Datable table td:first-child {
+  font-family: PingFangSC-Medium;
+  font-size: 26px;
+  color: #59b2f7;
+  line-height: 30px;
+}
+
+.Datable table td:last-child {
+  font-family: PingFangSC-Medium;
+  font-size: 36px;
+  color: #73b6ff;
+  line-height: 36px;
+}
+
+/* 中间 */
+
+.center span {
+  font-family: PingFang-SC-Medium;
+  font-size: 30px;
+  color: #f8e71c;
+  letter-spacing: 0;
+  line-height: 100px;
+}
+
+.center p {
+  display: inline;
+  font-family: PingFang-SC-Medium;
+  font-size: 30px;
+  color: #3c76b8;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+}
+
+/* 弹出表格 */
+
+.TableAlert {
+  width: 600px;
+  height: 318px;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  background: #0c2254;
+  border: 1px solid #0058b8;
+  border-radius: 1.15px 0 0 0;
+  text-align: left;
+  display: none;
+}
+
+.TableAlert table {
+  width: 520px;
+  border: #0058b8 solid 1px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.TableAlert img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.TableAlert table thead {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #0058b8;
+  border-radius: 1.15px 0 0 0;
+}
+
+.TableAlert table td {
+  border-bottom: #0058b8 solid 1px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.TableAlert table tr:nth-child(2) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.TableAlert span {
+  font-family: PingFang-SC-Medium;
+  font-size: 36px;
+  color: #f8e71c;
+  letter-spacing: 0;
+  line-height: 100px;
+  margin-left: 40px;
+}
+
+.TableAlert p {
+  display: inline;
+  font-family: PingFang-SC-Medium;
+  font-size: 24px;
+  color: #569ceb;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.TableFlow {
+  width: 327px;
+  height: 271px;
+  position: absolute;
+  top: -120px;
+  left: 52px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px 8px 8px 0 0 0 8px;
+  border-radius: 8px 8px 8px 0px 0px 0px 8px;
+  display: none;
+}
+
+.TableFlow table {
+  width: 288px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.TableFlow table td {
+  line-height: 34px;
+  text-align: right;
+}
+
+.TableFlow table td:first-child {
+  text-align: left;
+}
+/* 弹出的地图框 */
+.mapalert {
+  width: 1219px;
+  height: 940px;
+  background: #0c2254;
+  border: 1px solid #0058b8;
+  position: absolute;
+  top: 20px;
+  display: none;
+
+}
+.mapalert img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+table td:first-child {
+    padding-left: 0px; 
+}

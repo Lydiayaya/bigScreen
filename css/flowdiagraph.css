@@ -1,0 +1,144 @@
+.container {
+    margin-top: 20px;
+}
+
+table {
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #58B1F6;
+    letter-spacing: 0;
+    border-collapse: collapse;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.TableName2 {
+    padding-top: 20px;
+}
+
+.left {
+    width: 600px;
+    float: left;
+}
+
+.left .top5 .progressTable td {
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+
+/* 小标题 */
+
+.left .top5 {
+    position: relative;
+    height: 228px;
+    background-image: url(../img/carsite.png);
+}
+
+.top5 .TableName {
+    padding-top: 20px;
+}
+
+.SubHead {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 14px;
+}
+
+.SubHead2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 14px;
+}
+
+.SubHead3 {
+    position: absolute;
+    top: 20px;
+    right: 75px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 14px;
+}
+
+.left .Atop10 {
+    margin-top: 30px;
+    height: 333px;
+    background-image: url(../img/arearank.png);
+    position: relative;
+}
+
+.left .Atop10 table {
+    width: 570px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.left .Atop10 table td {
+    line-height: 25px;
+}
+
+.left .Atop10 table td:first-child {
+    text-align: center;
+    padding-right: 15px;
+}
+
+.left .Atop10 table td:nth-child(3) {
+    padding-left: 10px;
+}
+
+.left .Ftop10 {
+    margin-top: 10px;
+    height: 333px;
+    background-image: url(../img/flowrank.png);
+    position: relative;
+}
+
+.left .Ftop10 table {
+    width: 570px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.left .Ftop10 table td {
+    line-height: 25px;
+}
+
+.left .Ftop10 table td:first-child {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.progress {
+    height: 15px;
+}
+
+.progress-done {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+
+/* 右边的表格 */
+
+.right {
+    height: 950px;
+    width: 1230px;
+    float: right;
+    position: relative;
+}

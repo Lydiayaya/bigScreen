@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/flowdiagraph.css">
+    <link rel="stylesheet" href="./css/monitorcenter.css">
+    <link rel="stylesheet" href="./css/mousealert.css">
+
+    <title>汽车输运差个地图弹窗</title>
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="header">
+        <img src="./img/CenterTitle.png" alt="" class="BigTitle">
+        <ul>
+            <!-- 前四个左浮动 -->
+            <li onclick="Jumpcenter()">
+                <img src="./img/Lmenubg.png" alt="">
+                <!-- 在li里给绝对定位 -->
+                <p>指挥中心</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>泊位作业</p>
+            </li>
+
+            <li onclick="JumpTrain()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p>火车疏运</p>
+            </li>
+            <li onclick="Jumpcarshuyun()">
+                <img src="./img/Lmenubg.png" alt="">
+                <p class="activepage">汽车疏运</p>
+
+            </li>
+            <!-- 后四个右浮动 -->
+            <li onclick="JumpDuichang()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>堆场KPI</p>
+            </li>
+            <li onclick="JumpBowei()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>泊位KPI</p>
+            </li>
+            <li onclick="JumpBusiness()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>业务运行</p>
+            </li>
+            <li onclick="JumpGC()">
+                <img src="./img/Rmenubg.png" alt="">
+                <p>港存动态</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间图表部分 -->
+    <div class="container">
+        <!-- 左边三小的 -->
+        <div class="left">
+            <div class="top5">
+                <p class="SubHead">单位（万吨）</p>
+                <p class="TableName">装载机作业情况</p>
+                <table class="progressTable">
+
+                    <tbody>
+                        <tr>
+                            <td style="color: #F06B00">1</td>
+                            <td style="color: #F06B00">南货场</td>
+                            <td style="color: #F06B00">8366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(240,107,0,0.3);">
+                                    <div class="progress-done" data-done="99.2"
+                                        style="width:34.5%;background: #F06B00;"></div>
+                                    <span class="percent" style="color: #F06B00">34.5%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #F8B500;">2</td>
+                            <td style="color: #F8B500;">45万货场</td>
+                            <td style="color: #F8B500;">7366.90</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(248,181,0,0.3);">
+                                    <div class="progress-done" data-done="99.1" style="width:26.0%;background: #F8B500">
+                                    </div>
+                                    <span class="percent" style="color: #F8B500;">26.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #00B589 ;">3</td>
+                            <td style="color: #00B589 ;">南26货场</td>
+                            <td style="color: #00B589 ;">7284.50</td>
+                            <td>
+                                <div class="progress" style="border: 1px solid rgba(0,181,137,0.3);">
+                                    <div class="progress-done" data-done="99.2"
+                                        style="width:17.5%;background-color: #00B589 ;"></div>
+                                    <span class="percent" style="color: #00B589 ;">17.5%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>南27货场</td>
+                            <td>7245.90</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:9.0%;"></div>
+                                    <span class="percent">9.0%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>码头前沿</td>
+                            <td>7170.44</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-done" data-done="99.2" style="width:7.5%;"></div>
+                                    <span class="percent">7.5%</span>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="Atop10">
+                <p class="SubHead2" onclick="RateShow()">占比</p>
+                <p class="SubHead3">单位（万吨）</p>
+                <p class="TableName2">区域排名TOP10</p>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/top1.png" alt="">
+                        </td>
+                        <td>山西内蒙</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/top2.png" alt="">
+                        </td>
+                        <td>石家庄周边</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/top3.png" alt="">
+                        </td>
+                        <td>邯邢、武安 </td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>天津及周边</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>河南</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>陕西</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>攀枝花周边</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8
+                        </td>
+                        <td>江西</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9
+                        </td>
+                        <td>北部地区</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10
+                        </td>
+                        <td>江浙沪</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Ftop10">
+                <p class="SubHead2" onclick=" RateShow()">占比</p>
+                <p class="SubHead3">单位（万吨）</p>
+                <p class="TableName2">流向排名TOP10</p>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/top1.png" alt="">
+                        </td>
+                        <td>瑞发商贸</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/top2.png" alt="">
+                        </td>
+                        <td>太行钢铁</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/top3.png" alt="">
+                        </td>
+                        <td>巨鹿方正</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>申银特钢</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5
+                        </td>
+                        <td>江天重工</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6
+                        </td>
+                        <td>陕西</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            7
+                        </td>
+                        <td>南宁货运码头</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8
+                        </td>
+                        <td>普阳</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9
+                        </td>
+                        <td>邢钢</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10
+                        </td>
+                        <td>新钢</td>
+                        <td>...................................................</td>
+                        <td>12345.67</td>
+                        <td>23.6%</td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <!-- 右边的地图 -->
+        <div class="right">
+            <div class="top">
+                <div class="DT">
+                    <span>2019</span>
+                    <p onclick="mapalertShow()">年全年累计吞吐量(吨）</p>
+                    <h4>9,525,542.00</h4>
+                    <div class="Datable">
+                        <table>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>外库(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>内道(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center">
+                <div class="DT" style="float: left;">
+                    <span>3</span>
+                    <p>月累计吞吐量(吨）</p>
+                    <h4>2,528,160.00</h4>
+                    <div class="Datable">
+                        <table>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>外库(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>内道(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="DT" style="float: right;margin-right: 70px;">
+                    <span>30</span>
+                    <p>日累计吞吐量(吨）</p>
+                    <h4>77,308.00</h4>
+                    <div class="Datable">
+                        <table>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>外库(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                            <tr>
+                                <td>内道(吨)</td>
+                                <td>6,583,780.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="./img/pic1.png" alt="">
+                <div class="ele">
+                    <div class="matouhuochang">
+                        南方码头货场
+                    </div>
+                    <div class="south" onclick="SouthShow()">
+                        南货场
+                    </div>
+                    <div class="line1050">
+                        南疆矿石铁路专用线（1050道线）
+                    </div>
+                    <div class="kuangshi">
+
+                    </div>
+                    <span class="kuaangshitext"> 南疆矿石物流（45万货场）</span>
+                    <div class="H26">
+                        26#货场
+                    </div>
+                    <div class="H27">
+                        27#货场
+                    </div>
+                    <div class="text1 txt">
+                        11#泊位
+
+                    </div>
+                    <div class="text2 txt">
+                        12#泊位
+
+                    </div>
+                    <div class="text3 txt">
+                        26#泊位
+
+                    </div>
+                    <div class="text4 txt">
+                        27#泊位
+
+                    </div>
+                </div>
+                <div class="TableAlert">
+                    <span>南货场</span>
+                    <P>累计疏运量</P>
+                    <img src="./img/close.png" alt="" onclick="SouthHidden()">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>2020年</td>
+                                <td>3月</td>
+                                <td>30日</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>2，530,776</td>
+                                <td>656,432</td>
+                                <td>23,330</td>
+                            </tr>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>2，530,776</td>
+                                <td>656,432</td>
+                                <td>23,330</td>
+                            </tr>
+                            <tr>
+                                <td>汽提(吨)</td>
+                                <td>2，530,776</td>
+                                <td>656,432</td>
+                                <td>23,330</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="TableFlow" onclick="RateHidden()">
+
+                    <table>
+
+                        <tbody>
+                            <tr>
+                                <td>装载率</td>
+                                <td>99.21%</td>
+                            </tr>
+                            <tr>
+                                <td>日出库量(吨)</td>
+                                <td>65.546</td>
+                            </tr>
+                            <tr>
+                                <td>昼夜汽提总数</td>
+                                <td>74.345</td>
+                            </tr>
+                            <tr>
+                                <td>在场滞留汽提车辆数</td>
+                                <td>3.453</td>
+                            </tr>
+                            <tr>
+                                <td>作业点数</td>
+                                <td>A1-1</td>
+                            </tr>
+                            <tr>
+                                <td>倒入吨</td>
+                                <td>54,432</td>
+                            </tr>
+                            <tr>
+                                <td>倒出吨</td>
+                                <td>21.550</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="mapalert">
+                <img src="./img/mapclose.png" alt="" onclick="mapalertHidden() ">
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script src="./js/mousealert.js"></script>
+  <script src="./js/page.js"></script>
+</body>
+
+</html>

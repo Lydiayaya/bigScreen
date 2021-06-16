@@ -1,0 +1,111 @@
+/*  
+添加为0就是20*/
+
+@font-face {
+    font-family: "Digiface";
+    src: url('../font/digifac.TTF');
+}
+
+.content {
+    margin-top: 0;
+}
+
+
+/* 左边 */
+
+.container .Left .CenterTop {
+    height: 433px;
+}
+
+.container .Left .CenterTop td:nth-child(2) {
+    text-align: left;
+    padding-left: 97px;
+}
+
+.container .Left .CenterTop td:last-child {
+    padding-right: 55px;
+}
+
+.container .Left .CenterBottom {
+    height: 495px;
+}
+
+
+/* 中间 */
+
+.container .Center .CenterTop2 {
+    height: 433px;
+    background-image: url(../img/rank_p5.png);
+    background-size: 100% 100%;
+    margin-top: -20px;
+}
+
+.Center .CenterTop2 table {
+    margin-top: 20px;
+}
+
+.CenterTop2 .preday td {
+    height: 44px;
+}
+
+.CenterTop2 .preday td:nth-child(2) {
+    text-align: left;
+    padding-left: 45px;
+}
+
+.CenterTop2 .preday td:nth-child(3) {
+    text-align: left;
+    padding-left: 45px;
+}
+
+.container .Center .CenterBottom2 {
+    height: 495px;
+    background-image: url(../img/rank_p5.png);
+    background-size: 100% 100%;
+}
+
+.container .Center .CenterBottom2 table {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container .Center .CenterBottom2 td {
+    height: 44px;
+}
+
+
+/* 右边 */
+
+.container .Right .CenterTop2 {
+    height: 433px;
+    width: 610px;
+    background-image: url(../img/rank_p5.png);
+    background-size: 100% 100%;
+}
+
+.container .Right .CenterBottom2 {
+    height: 495px;
+    width: 610px;
+    background-image: url(../img/rank_p5.png);
+    background-size: 100% 100%;
+}
+
+.num {
+    float: left;
+    font-family: Digiface;
+    font-size: 56px;
+    color: #00F4FF;
+    text-align: center;
+    line-height: 54px;
+    margin-left: 12px;
+}
+
+.numborder {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.Left .CenterBottom .TableName2 {
+    float: left;
+}

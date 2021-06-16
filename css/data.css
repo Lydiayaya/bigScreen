@@ -1,0 +1,240 @@
+.title {
+    position: relative;
+}
+
+@font-face {
+    font-family: "Digiface";
+    src: url('../font/digifac.TTF');
+}
+
+
+/* 侧边小框 */
+
+.title .asidetitle {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 138px;
+    height: 80px;
+    background: #0C2254;
+    /* 这里也很重要 */
+    border: 4px solid transparent;
+    border-right: none;
+    /* 设置边框渐变______不会，网上找的 */
+    border-radius: 51px 0 0 51px;
+    border-radius: 51px 0px 0px 51px;
+    background-image: linear-gradient(#091444, #091444), linear-gradient(to right, rgba(36, 97, 208, 1), rgba(36, 97, 209, 0.39));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.title .asidetitle img {
+    width: 24px;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+}
+
+.title .asidetitle p {
+    width: 64px;
+    font-family: PingFangSC-Medium;
+    font-size: 30px;
+    color: #00EBF8;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 54px;
+}
+
+
+/* 表格 */
+
+.title table {
+    width: 1694px;
+    margin-left: 0;
+    border: none;
+    margin-top: 21px;
+    margin-bottom: 32px;
+}
+
+.title td {
+    border: none;
+    text-align: left;
+    font-family: PingFang-SC-Medium;
+    font-size: 26px;
+    color: #59B2F7;
+    letter-spacing: 0;
+    background-color: #091444;
+}
+
+.title .num {
+    font-family: Digiface;
+    font-size: 50px;
+    color: #00F4FF;
+    letter-spacing: 4px;
+    line-height: 50px;
+}
+
+.title td:first-child {
+    padding-left: 0;
+}
+
+.title .menushow {
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #59B2F7;
+    line-height: 24px;
+}
+
+.title .menu {
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #F8E71C;
+    line-height: 36px;
+}
+
+.title .menu img {
+    margin-bottom: 8px;
+}
+
+.Left .CenterBottom,
+.CenterTop {
+    margin-top: 20px;
+}
+
+
+/* 中间表格表头 */
+
+.TableName2 {
+    width: 610px;
+}
+
+.TableName2 p {
+    display: inline;
+}
+
+.TableName2 span {
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #CCC225;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+
+/* 中间的表格 */
+
+.Center table {
+    width: 580px;
+}
+
+.Center .CenterTop td {
+    height: 61px;
+}
+
+.Center .CenterBottom td {
+    height: 34px;
+}
+
+
+/* 右边 */
+
+.Right .CenterTop td {
+    height: 44px;
+}
+
+.Right .CenterTop .solo {
+    width: 74px;
+    margin-right: -50px;
+}
+
+.Right .CenterBottom td {
+    height: 34px;
+}
+
+.Right .CenterBottom td :first-child {
+    width: 54px;
+}
+
+.Right .CenterBottom td:nth-child(2) {
+    text-align: center;
+}
+
+.Right .CenterBottom .more {
+    margin-left: 320px;
+}
+
+
+/* 上面的框 */
+
+.content .board {
+    width: 1752px;
+    height: 247px;
+    background: #0C2254;
+    border: 1px solid #0058B8;
+    box-shadow: 0 9px 4px 0 rgba(0, 0, 0, 0.50);
+    position: absolute;
+    top: 240px;
+    left: 84px;
+    display: none;
+}
+
+.content .board table {
+    width: 1700px;
+    font-family: PingFang-SC-Medium;
+    color: #59B2F7;
+    letter-spacing: 0;
+    border: none;
+}
+
+.board td {
+    background-color: #0C2254;
+    border: none;
+    font-size: 26px;
+    text-align: left;
+}
+
+.content .board .text {
+    margin-top: 20px;
+}
+
+.content .board p {
+    display: inline;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #FFFF02;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.content .board span {
+    font-family: PingFangSC-Medium;
+    font-size: 30px;
+    color: #59B2F7;
+    text-align: left;
+    line-height: 50px;
+}
+
+.board .num {
+    font-family: Digiface;
+    font-size: 50px;
+    color: #00F4FF;
+    letter-spacing: 4px;
+    line-height: 50px;
+    padding-top: 13px;
+}
+
+
+/* 数字字体设置 */
+
+.numbor {
+    float: left;
+    background: #10184F;
+    border: 1px solid #0055B3;
+    margin-right: 5px;
+}
+
+.numborpunc {
+    float: left;
+}
